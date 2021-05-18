@@ -33,6 +33,15 @@
 
 ```
 
+- Endpoint: `/clothes`
+ 
+
+```JavaScript
+
+  app.use('/food',clothesRoute);
+
+```
+
 
 
 #### Tests
