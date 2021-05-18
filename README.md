@@ -12,7 +12,7 @@
 
 - [submission PR](https://github.com/mohammad-qethama/basic-api-server/pull/1)
 - [tests report](https://github.com/mohammad-qethama/basic-api-server/actions)
-- [master-deployment](https://express-simple-ma.herokuapp.com/person?name=doe)
+- [master-deployment](https://api-food-clothes.herokuapp.com/)
 
 ### Setup
 
@@ -24,20 +24,16 @@
 
 - `npm start`
 
-- Endpoint: `/person`
-  - Returns status(200) & json if (`/person?name=name`)
+- Endpoint: `/food`
+ 
 
 ```JavaScript
 
-    res.status(200).json({
-            name:req.query.name
-        });
+  app.use('/food',foodRoute);
 
 ```
 
-- Endpoint: `/person`
 
-  - Returns error 500 if (`/person`)or(`req.query.name` = //falsy value)
 
 #### Tests
 
